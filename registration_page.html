@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+  *{
+    margin: 0;padding: 0%;
+  }
+label{
+color: black;
+}
+  #img{
+    background-image:  url("registration.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity:0.5;
+  }
+</style>
+<body class="bg-primary">
+  <section height="" class="container bg-light shadow-lg mt-lg-5 rou 
+  nded-left"  id="sesstion">
+  <form class="" action="database.php" method="POST"> 
+<div class="row border border-danger ">
+  <div class="col-lg-6 col-md-6 col-sm-12 d-sm-block " id="img" >
+
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 bg-light">
+<h2>  Registration Form</h2>
+
+
+
+
+  <div class="row">
+   <div class="input-groupp col-lg-6  ">
+  <label> First Name:</label> <br> 
+  <div class="input-group">
+   
+<input type="text" class="form-check " name="fname" placeholder="First Name">
+</div>
+</div>
+<div class="input-group col-lg-6  ">
+  <label> Last Name :</label> <br>
+<div class="input-group"> 
+ 
+<input type="text" class="form-check" name="lname" placeholder="Last Name">
+
+
+  </div>
+ </div>
+</div>
+
+ <br>
+<div class="row">
+
+  <div class="col-lg-6">
+    <label> contact No:</label> <br>
+    <div class="input-group">  
+   
+<input type="text" class="form-check" name="contact" placeholder="Contact no..">
+</div>
+  </div>
+
+  <div class="col-lg-6">
+    <label> Email Address:</label> <br>
+    <div class="input-group">  
+    
+<input type="email" class="form-check" name="email"  placeholder="Email Address" >
+
+  </div>
+</div>
+</div>
+
+  <br>
+
+<div class="row">
+
+  <div class="col-lg-6">
+    <label> Security Question</label> <br>
+    <div class="input-group"> 
+   
+<select placeholder="Security Question" name="question" class="form-check">
+  <option> Security Question</option>
+  <option>College name</option>
+  <option>where are you from</option>
+</select>
+
+  </div>
+  </div>
+  <div class="col-lg-6">
+    <label> Security Answer</label> <br>
+    <div class="input-group"> 
+   
+<input type="text" class="form-check" name="answer" placeholder="Security Answer">
+
+  </div>
+</div>
+</div>
+ <br>
+<div class="row">
+
+  <div class="col-lg-6">
+    <label> Paasword -:</label> <br> 
+    <div class="input-group" >  
+    
+<input type="password" class="form-check" name="password"  placeholder="password">
+
+  </div>
+  </div>
+  <div class="col-lg-6">
+    <label> Confirm password</label> <br>
+    <div class="input-group">  
+    
+<input type="password" class="form-check" name="cpassword"  placeholder="Confirm password">
+
+  </div>
+</div>
+  
+</div> <br> <br>
+<div class="row align-">
+  <div class="col-lg-8 col-md-8 col-sm-12">
+           
+    <button type="submit" name="submit2" class="btn btn-primary btn-lg text-uppercase">Register</button>
+                
+              </div>
+               
+                <div class="col-lg-4 col-md-4 col-sm-12 text-cente">
+                  
+                  <button type="button"   class=" mt-2 btn btn-primary btn-lg text-up" data-toggle="modal" data-target="#loginModal" >LOgin</button>
+                </div>
+</div>
+<br>
+
+
+
+
+  <!-- The Modal -->
+ 
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-title text-center">
+            <h4>Login</h4>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <form>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" id="email1" placeholder="Your email address..." required>
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" class="form-control" id="password1" placeholder="Your password...">
+              </div>
+              <button type="submit" name="login" class="btn btn-info btn-block btn-round">Login</button>
+            </form>
+            
+            <div class="text-center text-muted delimiter">or use a social network</div>
+            <div class="d-flex justify-content-center social-buttons">
+              <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="fab fa-facebook"></i>
+              </button>
+              <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                <i class="fab fa-linkedin"></i>
+              </button>
+            </di>
+          </div>
+        </div>
+      </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <div class="signup-section">Not a member yet? <a href="registration_page.html" class="text-info"> Sign Up</a>.</div>
+        </div>
+    </div>
+  </div>
+        <!--------modal end ----------->
+  </div>
+
+</div>
+
+
+
+</form>
+
+  </section>
+  <section class="container bg-light">
+    <div class="text-center">
+      
+     <label>© 2021 . All rights reserved , site designed and developed by </label> <a href="https://varun4709.github.io/" > Varun maletha</a>
+    </div>
+  </section>
+</body>
+</html>
