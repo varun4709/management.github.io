@@ -1,10 +1,10 @@
 scripts included:
 
-html
-css
-Bootstrap
-javascript
-PHP 
-MYSQL
+html,
+css,
+Bootstrap,
+javascript,
+PHP ,
+MYSQL..
 
 
